@@ -88,7 +88,7 @@ end
 When(/^the document should be successfully uploaded$/) do
   driver = $driver
   wait = Selenium::WebDriver::Wait.new(:timeout => 10)
-  puts "Test Passed: Account successful " if wait.until {
+  puts "Upload successful" if wait.until {
     driver.find_element(:xpath, "//*[contains(text(),' Thank You! Your files are uploading now')]").displayed?
   }
 end
